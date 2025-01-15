@@ -33,20 +33,35 @@ The goal is to apply various time series forecasting models and compare their pe
 - **Random Forest**: A machine learning method used to create lagged features and make predictions.
 - **XGBoost**: A gradient boosting algorithm for time series forecasting.
 
-## Results
-- **Federal Funds Rate (Data 1)**: Forecasts were generated for 24 months using ETS, ARIMA, Prophet, Random Forest, and XGBoost models. The results were compared, and accuracy metrics such as RMSE, MAE, and MAPE were calculated for each model.
-  
-- **Electricity Net Generation (Data 2)**: Similar to Data 1, forecasts for 24 months ahead were made using the same models. Accuracy was evaluated, and visualizations of the forecast were provided.
-
 ### Forecast Plots:
 - The forecast plots for both datasets and all models are available in the `results/forecast_plots/` folder.
 
-### Accuracy Metrics:
-- The accuracy of each model was measured using various evaluation metrics (RMSE, MAE, MAPE). These metrics are available in the results for each model and dataset.
+## Model Performance Comparison
 
-## Conclusion
-This project demonstrates the use of multiple forecasting models to predict time series data. It provides insights into the effectiveness of each model in forecasting key economic and industrial indicators, with a focus on Federal Funds rate and electricity generation.
+### Federal Funds Rate (Data 1)
+
+| Model       | RMSE    | MAE     | MPE      | MAPE    |
+|-------------|---------|---------|----------|---------|
+| **ETS**     | 0.485   | 0.229   | -1.772   | 8.300%  |
+| **ARIMA**   | 0.438   | 0.214   | -0.987   | 7.823%  |
+| **Prophet** | 4.231   | 4.231   | 79.381%  | 79.381% |
+| **RF**      | 1.135   | 0.651   | -18.245% | 20.496% |
+
+### Electricity Net Generation (Data 2)
+
+| Model       | RMSE     | MAE     | MPE      | MAPE    |
+|-------------|----------|---------|----------|---------|
+| **ETS**     | 559.580  | 307.112 | -0.345   | 15.189% |
+| **ARIMA**   | 572.597  | 285.792 | -0.121   | 3.910%  |
+| **Prophet** | 11,553.6 | 11,549.4| 100.495% | 100.495%|
+| **XGBoost** | 1,863.0  | 1,816.3 | 15.908%  | 15.908% |
 
 ---
 
-Feel free to explore the results, visualizations, and accuracy metrics generated in this project.
+### Notes:
+- **RMSE** = Root Mean Squared Error
+- **MAE** = Mean Absolute Error
+- **MPE** = Mean Percentage Error
+- **MAPE** = Mean Absolute Percentage Error
+
+---
