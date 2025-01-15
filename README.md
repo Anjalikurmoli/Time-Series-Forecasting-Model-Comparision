@@ -10,10 +10,10 @@ The goal is to apply various time series forecasting models and compare their pe
 
 ## Datasets
 1. **Federal Funds Rate (Data 1)**: A CSV file containing monthly data on the Federal Funds rate from 1954 to 2024.
-   - File: [Data 1.csv](data/Data%201.csv)
+   - File: [Data 1.csv](Data_1.csv)
 
 2. **Electricity Net Generation (Industrial Sector, Data 2)**: An Excel file containing monthly data on net electricity generation for the industrial sector from 1973 to 2024.
-   - File: [Data 2.xlsx](data/Data%202.xlsx)
+   - File: [Data 2.xlsx](Data_2.xlsx)
 
 ## Applied Models
 - **ETS (Exponential Smoothing)**: Applied to model and forecast both datasets.
