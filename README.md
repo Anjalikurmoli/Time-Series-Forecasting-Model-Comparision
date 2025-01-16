@@ -34,7 +34,7 @@ The goal is to apply various time series forecasting models and compare their pe
 - **XGBoost**: A gradient boosting algorithm for time series forecasting.
 
 ### Forecast Plots:
-- The forecast plots for both datasets and all models are available in the `results/forecast_plots/` folder.
+- The forecast plots for both datasets and all models are available in the `plots/` folder.
 
 ## Model Performance Comparison
 
